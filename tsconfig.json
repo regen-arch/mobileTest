@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "jsx": "react-jsx",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "outDir": "./dist" // Optional: where you want your compiled JavaScript to go
+  },
+  "include": [
+    "./src" // Assuming your source files are in a 'src' directory
+  ],
+  "exclude": ["node_modules"]
+}

@@ -1,0 +1,63 @@
+.segmentItem {
+  width: 100%;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: row;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background: #ffffff;
+  overflow: hidden;
+  .infoSegment {
+    display: inherit;
+    flex-direction: inherit;
+    flex-wrap: wrap;
+    flex-grow: 1;
+  }
+}
+
+.segmentCode {
+  display: flex;
+  width: 30%;
+  align-items: center;
+  justify-content: center;
+
+  span {
+    font-size: 3vw;
+    font-weight: 700;
+    color: #00b96b;
+  }
+  span:first-child {
+    margin-left: 15px;
+  }
+  span:last-child {
+    margin-right: 15px;
+  }
+}
+
+.segmentItem:last-child {
+  border-bottom: none;
+}
+
+.segmentDetails {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  p {
+    font-size: 20px;
+    font-weight: 400;
+  }
+  p:not(:first-child):not(:last-child) {
+    margin: 0 20px;
+  }
+}
+
+.buttonContainer {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 30px;
+  font-weight: 700;
+  margin-right: 20px;
+}
