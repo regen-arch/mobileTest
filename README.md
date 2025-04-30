@@ -14,11 +14,12 @@
 
 ##### **1.3 时效性处理**
 
-- **逻辑**：定义缓存有效期（如 30 分钟），超时则刷新。
+- **逻辑**：定义缓存有效期为booking.json内的duration，超时则刷新。
+- **实现**：判断当前时间戳 - localStorage时间戳 是否大于duration
 
 ##### **1.4 Data Manager 核心逻辑**
 
-- **统一接口**：优先返回缓存，过期则自动刷新。
+- **统一接口**：优先返回缓存，过期则刷新。
 
 ---
 
@@ -38,11 +39,7 @@
 1. **Mock 数据**：直接使用 `booking.json`，无需真实 API。
 2. **Git 提交规范**：
    ```bash
-   # 重命名仓库（若需）
-   git remote set-url origin <新仓库URL>
-   git add .
-   git commit -m "feat: 实现DataManager与缓存逻辑"
-   git push origin main
+   # 仓库命名mobileTest
    ```
 
 ---
